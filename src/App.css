@@ -1,0 +1,521 @@
+.App{
+  display: flex;
+}
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 1300px;
+  background-color: rgb(1, 1, 72);
+}
+
+.side-bar #side-header{
+  text-align: left;
+  color: rgb(239, 242, 244);
+  margin: 10%;
+  margin-top: 0%;
+  padding: 5%;
+}
+.side-bar #side-body {
+  height: 60%;
+}
+.side-bar > :last-child{
+  justify-content: end;
+  align-items: end;
+}
+.side-bar > .profile{
+  text-align: left;
+  background-color: rgb(44, 44, 109);
+  color: rgb(239, 242, 244);
+  margin: 5%;
+  height: 5%;
+  padding: 5%;
+  border-radius: 10px;
+}
+.profile > .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 5%;
+}
+.profile > .box > img{
+  width: 30px;
+  height: 30px;
+  margin-top: 2%;
+  border-radius: 50%;
+}
+.profile > .box > .profile-info{
+  height: fit-content;
+}
+.profile > .box > .profile-info > #p1{
+  font-weight: 700;
+}
+.profile > .box > .profile-info > #p2{
+  color: gray;
+  font-size: smaller;
+  font-weight: 500;
+}
+.profile > .box > button{
+  width: 5%;
+  height: 5%;
+  outline: none;
+  border: none;
+  background-color: rgb(44, 44, 109);
+  color: gray;
+  float: right;
+  margin-top: 2%;
+  font-size: larger;
+  font-weight: 300;
+}
+.side-bar #side-body .side-body-header{
+  text-align: left;
+  color: rgb(239, 242, 244);
+  background-color: rgb(44, 44, 109);
+  margin: 10%;
+  padding: 5%;
+  border-radius: 10px;
+}
+.side-body{
+  text-align: left;
+  color: rgb(209, 203, 203);
+  margin: 7%;
+  padding: 5%;
+  font-size: small;
+}
+.side-body > button{
+  width: 5%;
+  height: 5%;
+  outline: none;
+  border: none;
+  background-color: rgb(1, 1, 72);
+  color: rgb(209, 203, 203);
+  float: right;
+  font-size: large;
+  font-weight: 500;
+}
+.main{
+  width: 98%;
+  height: auto;
+  background-color: rgba(226, 227, 229, 0.826);
+}
+.main > .box{
+  height: 800px; 
+}
+.main > .box > .header{
+  margin: 2% 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.main > .box > .header > div {
+  display: flex;
+}
+.main > .box > .header > div > div{
+  font-size: larger;
+  color: rgb(205, 180, 150);
+}
+.input{
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(239, 242, 244);
+  cursor: pointer;
+}
+.input > input{
+  outline: none;
+  border: none;
+  height: 30px;
+  border-radius: 2px;
+  background-color: rgb(239, 242, 244);
+  flex: 1;
+}
+.info-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5% 0 5%;
+}
+.basic-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 22.5%;
+  background-color: rgb(239, 242, 244);
+  border-radius: 5px;
+}
+ .common{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: xx-large;
+  width: 40%;
+  height: 75%;
+  border-radius: 50%;
+}
+.earning{
+  background-color: rgb(208, 240, 220);
+  color: rgb(42, 141, 42);
+}
+.orders{
+  background-color: rgb(213, 187, 235);
+  color: rgb(100, 12, 134);
+}
+.balance{
+  background-color: rgb(163, 219, 234);
+  color: rgb(41, 41, 218);
+}
+.total-sales{
+  background-color: rgb(244, 186, 213);
+  
+  color: rgb(231, 37, 89);
+}
+#info-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#info-text :first-child{
+  font-size: smaller;
+  color: grey;
+}
+#info-text :nth-child(2){
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
+#info-text :nth-child(3){
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+}
+#info-text > div > #up{
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(14, 150, 14);
+}
+#info-text > div > #down{
+  font-size: 10px;
+  font-weight: bold;
+  color: red;
+}
+#info-text :nth-child(3) > :nth-child(2){
+  font-size: 10px;
+  font-weight: bold;
+}
+.middle{
+  display: flex;
+  justify-content: space-around;
+  height: 40%;
+  margin: 2% 2.5% 0 2.5%;
+  padding-top: 2.5%;
+}
+.middle > .graph{
+  width: 60%;
+  height: 95%;
+  border-radius: 10px;
+  background-color: rgb(239, 242, 244);
+}
+.middle > .pieChart{
+  width: 30%;
+  height: 95%;
+  border-radius: 10px;
+  background-color: rgb(239, 242, 244);
+}
+.middle > .pieChart > .header{
+  margin-left: 5%;
+}
+.chart-body{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.chart-body > div{
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: rgb(243, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-body > div > div{
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+  background-color: rgb(210, 217, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-body > div > div > div{
+  width: 64%;
+  height: 64%;
+  border-radius: 50%;
+  background-color: rgb(243, 241, 241);
+  text-align: center;
+  font-size: x-small;
+}
+.chart-body > div > div > div > h3{
+  margin-bottom: 0%;
+}
+.chart-body > div > div > div > p{
+  margin-top: 0%;
+}
+.graph > .header{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 2% 5% 0 5%;
+}
+.graph > .header > div > :first-child{
+  font-size: larger;
+  font-weight: bold;
+}
+.graph > .header > div > :nth-child(2){
+  font-size: small;
+  font-weight: 600;
+  color: gray;
+}
+.graph > .header > .options > select{
+  outline: none;
+  border: none;
+  font-size: smaller;
+  color: grey;
+  background-color: rgb(234, 238, 244);
+  height: 20px;
+  border-radius: 4px;
+}
+.graph > .body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  align-items: flex-end;
+  height: 60%;
+}
+.body > div{
+  width: 6%;
+  border-radius: 8px;
+  background-color: rgb(209, 198, 221);
+}
+.body > #jan{
+  height: 45%;
+}
+.body > #feb{
+  height: 30%;
+}
+.body > #mar{
+  height: 80%;
+}
+.body > #apr{
+  height: 60%;
+}
+.body > #may{
+  height: 65%;
+}
+.body > #jun{
+  height: 25%;
+}
+.body > #jul{
+  height: 67%;
+}
+.body > #aug{
+  height: 85%;
+  background-color: rgb(81, 45, 223);
+}
+.body > #sep{
+  height: 69%;
+}
+.body > #oct{
+  height: 66%;
+}
+.body > #nov{
+  height: 65%;
+}
+.body > #dec{
+  height: 70%;
+}
+.graph > .body2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.body2 > div{
+  text-align: center;
+  width: 7%;
+}
+.pieChart > .header{
+  margin: 2% 5% 0 5%;
+}
+.pieChart > .header > :first-child{
+  font-size: larger;
+  font-weight: bold;
+}
+.pieChart > .header > :nth-child(2){
+  font-size: small;
+  font-weight: 600;
+  color: gray;
+}
+.header1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 2% 5% 0 5%;
+  background-color: rgb(239, 242, 244);
+  padding: 2%;
+  border-radius: 10px 10px 0px 0px;
+}
+.header1 > #product-head{
+  font-size: large;
+  font-weight: bold;
+}
+.header1-right{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 30%;
+  justify-content: space-between;
+}
+.header1-right > input{
+  outline: none;
+  width: 50%;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(226, 227, 229, 0.826);
+}
+.header1-right > select{
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(226, 227, 229, 0.826);
+  color: gray;
+}
+.header2{
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 5% 0 5%;
+  background-color: rgb(239, 242, 244);
+  padding: 2%;
+  border-bottom: 2px solid rgba(226, 227, 229, 0.826);;
+}
+.header2 > #header2-head{
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+}
+.header2 > .header2-right{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-weight: bold;
+  font-size: small;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 70% 11% 11% 11%;
+  margin: 0% 5% 0 5%;
+  padding: 2%;
+  background-color: rgb(239, 242, 244);
+}
+.grid-container > .grid-left{
+  display: flex;
+}
+.images{
+  width: 10%;
+  height: 40px;
+  border-radius: 5px;
+}
+.image-content{
+  margin-left: 2%;
+}
+.image-content> :first-child{
+  font-size: larger;
+  font-weight: bold;
+}
+.image-content> :nth-child(2){
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+}
+.grid-right1{
+  color: gray;
+  font-weight: 600;
+}
+.grid-right2{
+  font-weight: 600;
+}
+.grid-right3{
+  color: gray;
+  font-weight: 600;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .info-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10%;
+  }
+  .info-box > .basic-info{
+    width: auto;
+    height: auto;
+    margin: 10%;
+  }
+  .middle {
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+  .middle > .graph{
+    width: auto;
+    height: 100%;
+  }
+  .middle > .graph > .body2{
+    height: auto;
+    width: auto;
+  }
+  .middle > .pieChart{
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 430px){
+  .header > .header1{
+    margin: 0%;
+  }
+  .header > .header2{
+    margin: 0%;
+  }
+  .middle {
+    display: grid;
+    grid-template-columns: auto;
+    height: fit-content;
+  }
+  .middle >.graph > .body2{
+    margin-bottom: 45%;
+  }
+  .middle > .pieChart > .chart-body{
+    margin-bottom: 50%;
+  }
+  .product-sell{
+    width: auto;
+  }
+  .product-sell > .grid-container{
+    margin: 0%;
+  }
+  .grid-right3{
+    margin-left: 10%;
+  }
+  .header1-right{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
